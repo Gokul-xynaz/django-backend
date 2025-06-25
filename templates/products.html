@@ -1,0 +1,123 @@
+{% extends "navbar.html" %} {% block content %}
+<div class="container">
+  <h1>Products</h1>
+  <div class="row">
+    <div class="products-container">
+      
+      <div class="product-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF894,1000_QL80_.jpg"
+          alt="Product 1"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3 class="product-title">Wireless Headphones</h3>
+          <p class="product-description">
+            High-quality wireless headphones with noise cancellation.
+          </p>
+          <p class="product-price">$99.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+      <img
+        src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF894,1000_QL80_.jpg"
+        alt="Product 2"
+        class="product-image"
+      />
+      <div class="product-info">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-description">
+          Latest smartphone with advanced features and sleek design.
+        </p>
+        <p class="product-price">$799.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+ 
+    <div class="product-card">
+      <img
+        src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF894,1000_QL80_.jpg"
+        alt="Product 3"
+        class="product-image"
+      />
+      <div class="product-info">
+        <h3 class="product-title">Laptop</h3>
+        <p class="product-description">
+          Powerful laptop for gaming and professional use.
+        </p>
+        <p class="product-price">$1299.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    
+    </div>
+   
+    
+  </div>
+</div>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    padding: 15px;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .product-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .add-to-cart {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-to-cart:hover {
+    background-color: #2980b9;
+  }
+</style>
+
+{% endblock %}
